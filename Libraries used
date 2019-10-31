@@ -1,0 +1,78 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+import re
+import time
+import warnings
+import sqlite3
+from sqlalchemy import create_engine # database connection
+import csv
+import os
+warnings.filterwarnings("ignore")
+import datetime as dt
+import numpy as np
+from nltk.corpus import stopwords
+from sklearn.decomposition import TruncatedSVD
+from sklearn.preprocessing import normalize
+from sklearn.feature_extraction.text import CountVectorizer
+from sklearn.manifold import TSNE
+import seaborn as sns
+from sklearn.neighbors import KNeighborsClassifier
+from sklearn.metrics import confusion_matrix
+from sklearn.metrics.classification import accuracy_score, log_loss
+from sklearn.feature_extraction.text import TfidfVectorizer
+from collections import Counter
+from scipy.sparse import hstack
+from sklearn.multiclass import OneVsRestClassifier
+from sklearn.svm import SVC
+from sklearn.cross_validation import StratifiedKFold 
+from collections import Counter, defaultdict
+from sklearn.calibration import CalibratedClassifierCV
+from sklearn.naive_bayes import MultinomialNB
+from sklearn.naive_bayes import GaussianNB
+from sklearn.model_selection import train_test_split
+from sklearn.model_selection import GridSearchCV
+import math
+from sklearn.metrics import normalized_mutual_info_score
+from sklearn.ensemble import RandomForestClassifier
+
+
+
+from sklearn.model_selection import cross_val_score
+from sklearn.linear_model import SGDClassifier
+from mlxtend.classifier import StackingClassifier
+
+from sklearn import model_selection
+from sklearn.linear_model import LogisticRegression
+from sklearn.metrics import precision_recall_curve, auc, roc_curve
+
+import seaborn as sns
+import matplotlib.pyplot as plt
+from subprocess import check_output
+%matplotlib inline
+import plotly.offline as py
+py.init_notebook_mode(connected=True)
+import plotly.graph_objs as go
+import plotly.tools as tls
+import os
+import gc
+
+import re
+from nltk.corpus import stopwords
+import distance
+from nltk.stem import PorterStemmer
+from bs4 import BeautifulSoup
+from nltk.corpus import stopwords
+# This package is used for finding longest common subsequence between two strings
+# you can write your own dp code for this
+import distance
+from nltk.stem import PorterStemmer
+from bs4 import BeautifulSoup
+from fuzzywuzzy import fuzz
+from sklearn.manifold import TSNE
+# Import the Required lib packages for WORD-Cloud generation
+# https://stackoverflow.com/questions/45625434/how-to-install-wordcloud-in-python3-6
+from wordcloud import WordCloud, STOPWORDS
+from os import path
+from PIL import Image
+
+from subprocess import check_output
